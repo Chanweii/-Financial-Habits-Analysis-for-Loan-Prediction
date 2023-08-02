@@ -39,7 +39,7 @@ The data is from the "[**E-Signing of Loan Based on Financial History**](https:/
 
 Data Description:
 
-|  |  |
+| Feature Name: | Definition Explanation: |
 | --- | --- |
 | entry_id | The identification number of the borrower. |
 | age | Age of the borrower. |
@@ -64,3 +64,56 @@ Data Description:
 | e_signed | Whether electronic signature has been completed (Yes: 1, No: 0). |
 
 ---
+
+[Google Colaboratory](https://colab.research.google.com/drive/18As73eKeJvVxsxcAq0Kx9eVzO7mj8URh?usp=sharing)
+
+### ****Load Essential Python Libraries****
+
+```python
+# Data analysis suite (numpy, pandas)
+import numpy as np 
+import pandas as pd 
+
+# Data visualization suite (matplotlib, seaborn)
+import matplotlib.pyplot as plt
+%matplotlib inline
+import seaborn as sns
+import random
+import time
+sns.set_style("whitegrid")
+
+random.seed(100)
+pd.set_option('display.max_columns', 80)
+pd.set_option('display.max_rows', 80)
+pd.set_option('display.float', '{:.2f}'.format)
+data = pd.read_csv('Financial-Data.csv')
+```
+
+```python
+# Output Data Characteristics
+# 17908 total data and 21 features
+data
+```
+
+![Output Data Characteristics](https://drive.google.com/uc?export=view&id=1X1yTkaYbNkLwLsEQnbndhHG4OGuykMVw)
+
+```python
+# Statistical variables of the data structure
+data.describe()
+```
+
+![Statistical variables of the data structure](https://drive.google.com/uc?export=view&id=1TsBLhjpDeQ6UHQ-40oGfEw3uyERCy5dZ)
+
+
+```python
+# Identify missing values
+from sklearn.experimental import enable_iterative_imputer
+from sklearn.impute import IterativeImputer
+data.isnull().sum()
+```
+
+![Identify missing values](https://drive.google.com/uc?export=view&id=19vesqZcif7X-r9Cn_7YM4GV_Dmkkd2X6)
+
+---
+
+### EDA
