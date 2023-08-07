@@ -393,6 +393,9 @@ print(classification_report(y_test, y_pred))
 
 Please find more examples of grid search algorithms, including Support Vector Machine, Random Forest, and XGBoost, BPNN in the attached file link.
 
+Google Colaboratory :
+[https://colab.research.google.com/drive/16OsatkJ3jg6Ffrr26mUyF_Am6FER4l2u?usp=sharing](https://colab.research.google.com/drive/16OsatkJ3jg6Ffrr26mUyF_Am6FER4l2u?usp=sharing)
+
 ---
 
 ### Model evaluation and comparison
@@ -508,6 +511,7 @@ Summing up the evaluation from all indicators, here are the conclusions:
 | BPNN | 0.618 | 0.609 | 0.810 | 0.695 | 0.664 |
 1. **XGBoost** demonstrates the highest overall performance, followed by Random Forests. Therefore, **XGBoost is recommended** as the primary choice for practical implementation.
 2. **Support Vector Machines (SVM)** and **Backpropagation Neural Networks (BPNN)** exhibit superior recall performance, effectively identifying a greater number of actual loan completions. For the pursuit of **higher recall**, these models should be given priority consideration.
+
 
 Google Colaboratory :
 [https://colab.research.google.com/drive/16OsatkJ3jg6Ffrr26mUyF_Am6FER4l2u?usp=sharing](https://colab.research.google.com/drive/16OsatkJ3jg6Ffrr26mUyF_Am6FER4l2u?usp=sharing)
