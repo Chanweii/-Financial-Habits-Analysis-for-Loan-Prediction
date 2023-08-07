@@ -65,7 +65,6 @@ Data Description:
 
 ---
 
-[Google Colaboratory](https://colab.research.google.com/drive/18As73eKeJvVxsxcAq0Kx9eVzO7mj8URh?usp=sharing)
 
 ### ****Load Essential Python Libraries****
 
@@ -138,7 +137,7 @@ plt.tight_layout(rect=[0, 0.03, 1, 0.95])
 plt.savefig('Histograms of Numerical Columns', transparent=True)
 ```
 
-![**Histograms of Numerical Columns**](https://drive.google.com/file/d/1pIrf4mxn2629Dq9iQBmelfM6cSUNCkrs/view?usp=sharing)
+![**Histograms of Numerical Columns**](https://drive.google.com/uc?export=view&id=1pIrf4mxn2629Dq9iQBmelfM6cSUNCkrs)
 
 **Histograms of Numerical Columns**
 
@@ -165,7 +164,7 @@ for i, column in enumerate(data.drop('e_signed', axis=1).columns, 1):
 plt.savefig('Bivariate Analysis', transparent=True)
 ```
 
-![Histogram of Two Variables](https://drive.google.com/file/d/1NMollMFk-VWCZpad_aBXAEySP8BpNxsj/view?usp=sharing)
+![Histogram of Two Variables](https://drive.google.com/uc?export=view&id=1NMollMFk-VWCZpad_aBXAEySP8BpNxsj)
 
 Histogram of Two Variables
 
@@ -188,7 +187,7 @@ plt.suptitle('Correlation with E-Signed', fontsize=20)
 plt.savefig('Correlation with E-Signed.png', transparent=True)
 ```
 
-![**Correlation with E-Signed**](https://drive.google.com/file/d/1_kQIiWguzoCQjqkP8xJXL21E7UugLSTm/view?usp=sharing)
+![**Correlation with E-Signed**](https://drive.google.com/uc?export=view&id=1_kQIiWguzoCQjqkP8xJXL21E7UugLSTm)
 
 **Correlation with E-Signed**
 
@@ -232,7 +231,7 @@ data.head()
 
 The pay_schedule, representing the frequency of salary received, is converted into 0 or 1 dummy variables using one-hot encoding. One feature is dropped to avoid multicollinearity.
 
-![Untitled](Financial%20Habits%20Analysis%20for%20Loan%20Prediction%20cabaab69c17c49d4b3f0ed3f2c160797/Untitled%203.png)
+![Categorical feature handling](https://drive.google.com/uc?export=view&id=1DYofyH-TIfVeDfh0sJuQAuwvSx9gMksh)
 
 ```python
 # One Hot Encoding
@@ -285,7 +284,7 @@ X_test = X_test2
 X_train
 ```
 
-![Untitled](Financial%20Habits%20Analysis%20for%20Loan%20Prediction%20cabaab69c17c49d4b3f0ed3f2c160797/Untitled%204.png)
+![Feature scaling  and Normalization](https://drive.google.com/uc?export=view&id=1ARKw8KsCc3PSOalmZb_h0_LuUnL_IG6P)
 
 ---
 
@@ -466,7 +465,7 @@ plt.savefig('ROC',dpi=300)
 plt.show();
 ```
 
-![Untitled](Financial%20Habits%20Analysis%20for%20Loan%20Prediction%20cabaab69c17c49d4b3f0ed3f2c160797/Untitled%205.png)
+![ROC/AUC Curve](https://drive.google.com/uc?export=view&id=1k0QwJ8xbbvmdRkH1MOALsjRC5B5aieUI)
 
 ---
 
@@ -491,7 +490,7 @@ plt.barh(sorted_features, sorted_importances, color='#3d6dae', height=0.6)
 plt.show()
 ```
 
-![Untitled](Financial%20Habits%20Analysis%20for%20Loan%20Prediction%20cabaab69c17c49d4b3f0ed3f2c160797/Untitled%206.png)
+![Feature Importance](https://drive.google.com/uc?export=view&id=18WoY5ubsH1yvNWUSPJPucjb-1e6sLNOr)
 
 ---
 
@@ -510,6 +509,5 @@ Summing up the evaluation from all indicators, here are the conclusions:
 1. **XGBoost** demonstrates the highest overall performance, followed by Random Forests. Therefore, **XGBoost is recommended** as the primary choice for practical implementation.
 2. **Support Vector Machines (SVM)** and **Backpropagation Neural Networks (BPNN)** exhibit superior recall performance, effectively identifying a greater number of actual loan completions. For the pursuit of **higher recall**, these models should be given priority consideration.
 
-[Google Colaboratory](https://colab.research.google.com/drive/16OsatkJ3jg6Ffrr26mUyF_Am6FER4l2u?usp=sharing)
-
+Google Colaboratory
 [https://colab.research.google.com/drive/16OsatkJ3jg6Ffrr26mUyF_Am6FER4l2u?usp=sharing](https://colab.research.google.com/drive/16OsatkJ3jg6Ffrr26mUyF_Am6FER4l2u?usp=sharing)
